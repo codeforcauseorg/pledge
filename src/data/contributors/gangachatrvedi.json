@@ -2,5 +2,6 @@
     "name": "Ganga Chaturvedi",
     "skills" : ["JS", "React"],
     "github" : "gangachatrvedi",
-    "cause" : "empowerment"
+    "cause" : "empowerment",
+    "image" : "/static/images/avatar-boy-1.jpeg"
 }

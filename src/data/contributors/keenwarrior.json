@@ -1,6 +1,7 @@
 {
     "name": "Anuj Garg",
-    "skills" : [],
+    "skills" : ["Apple","jg","jhg","jhg","hg"],
     "github" : "keenwarrior",
-    "cause" : "education for all"
+    "cause" : "education for all",
+    "image" : "/static/images/av7.jpg"
 }
