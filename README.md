@@ -2,7 +2,7 @@
 
 About Pledge
 
-## 🛠 Installation & Set Up
+## Installation & Set Up
 
 1. Install the Gatsby CLI
 
@@ -28,7 +28,7 @@ About Pledge
    gatsby develop
    ```
 
-## 🚀 Building and Running for Production
+## Building and Running for Production
 
 1. Generate a full static production build
 
