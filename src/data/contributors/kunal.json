@@ -1,10 +1,10 @@
 {
     "name": "Kunal Kushwaha",
-    "skills" : ["Sab kuch"],
-    "cause" : "everything you don't",
+    "skills" : ["ML", "DevOps", "FullStack"],
+    "cause" : "the community",
     "backgroundImg" : "/images/Avatar1Background.jpg",
     "image" : "/images/Avatar1.jpg",
     "github" : "https://github.com/kunal-kushwaha",
-    "twitter" : "",
-    "linkedin" : ""
+    "twitter" : "https://twitter.com/kush_kunal",
+    "linkedin" : "https://www.linkedin.com/in/kunal-kushwaha/"
 }
