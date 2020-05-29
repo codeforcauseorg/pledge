@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "pledge",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Code for cause pledge repository",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {

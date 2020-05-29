@@ -1,6 +1,6 @@
 # Pledge
 
-About Pledge
+It is platform to rethink about places we put our efforts as a developer. In most cases we all be too attached with goals that do do provide eventual satisfaction. We all, together can code for better future. Let's come together and take the pledge to Code for Cause.
 
 ## Installation & Set Up
 
@@ -10,9 +10,17 @@ About Pledge
    npm install -g gatsby-cli
    ```
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+2. In the top-right corner of the page, click Fork. Create a local clone of your fork:
 
    ```sh
+   git clone https://github.com/YOUR-USERNAME/pledge
+    ```
+
+
+3. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+
+   ```sh
+   cd pledge
    nvm install
    ```
 
@@ -25,7 +33,7 @@ About Pledge
 4. Start the development server
 
    ```sh
-   gatsby develop
+   npm run develop
    ```
 
 ## Building and Running for Production
@@ -33,17 +41,19 @@ About Pledge
 1. Generate a full static production build
 
    ```sh
-   gatsby build
+   npm run build
    ```
 
 1. Preview the site as it will appear once deployed
 
    ```sh
-   gatsby serve
+   npm run serve
    ```
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome.
+
+See the [guidelines](contributing.md) for contributing to this project.
 
 
 ## License

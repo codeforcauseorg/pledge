@@ -30,6 +30,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YoutubeIcon from '@material-ui/icons/YouTube';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -107,12 +109,17 @@ const useStyles = makeStyles(theme => ({
     paddingLeft : '10px',
     paddingRight : '10px'
   },
+  paddingClsxs:{
+    padding : 0
+  },
   iconSize: {
     fontSize: "32px",
   }
 }))
 function Footer() {
   const classes = useStyles()
+  const matches = useMediaQuery('(min-width:600px)');
+
   const flexContainer = {
     display: 'flex',
     flexDirection: 'row',
@@ -129,18 +136,7 @@ function Footer() {
             md={12}
             >          
             <List style={flexContainer}>
-              <ListItem className={classes.paddingCls} component="a" href="https://www.youtube.com/channel/UCfv8cds8AfIM3UZtAWOz6Gg" target="_blank">
-                <ListItemIcon className={classes.iconSocialMedia}>
-                  <YoutubeIcon className={classes.iconSize} />
-                </ListItemIcon>
-                <Hidden xsDown>
-                <ListItemText
-                  className={classes.iconSocialMedia}
-                  primary="Youtube"
-                />
-                </Hidden>
-              </ListItem>
-              <ListItem className={classes.paddingCls} component="a" href="https://www.facebook.com/codeforcauseorg" target="_blank">
+              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://www.facebook.com/codeforcauseorg" target="_blank">
                 <ListItemIcon className={classes.iconSocialMedia}>
                   <FacebookIcon className={classes.iconSize} />
                 </ListItemIcon>
@@ -151,18 +147,7 @@ function Footer() {
                 />
                 </Hidden>
               </ListItem>
-              <ListItem className={classes.paddingCls} component="a" href="https://www.instagram.com/codeforcause/" target="_blank">
-                <ListItemIcon className={classes.iconSocialMedia}>
-                  <InstagramIcon className={classes.iconSize} />
-                </ListItemIcon>
-                <Hidden xsDown>
-                <ListItemText
-                  className={classes.iconSocialMedia}
-                  primary="Instagram"
-                />
-                </Hidden>
-              </ListItem>
-              <ListItem className={classes.paddingCls} component="a" href="https://twitter.com/codeforcauseIn" target="_blank">
+              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://twitter.com/codeforcauseIn" target="_blank">
                 <ListItemIcon className={classes.iconSocialMedia}>
                   <TwitterIcon className={classes.iconSize} />
                 </ListItemIcon>
@@ -173,7 +158,29 @@ function Footer() {
                 />
                 </Hidden>
               </ListItem>
-              <ListItem className={classes.paddingCls} component="a" href="https://www.linkedin.com/company/codeforcauseorg/" target="_blank">
+              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://www.instagram.com/codeforcause/" target="_blank">
+                <ListItemIcon className={classes.iconSocialMedia}>
+                  <InstagramIcon className={classes.iconSize} />
+                </ListItemIcon>
+                <Hidden xsDown>
+                <ListItemText
+                  className={classes.iconSocialMedia}
+                  primary="Instagram"
+                />
+                </Hidden>
+              </ListItem>
+              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://www.youtube.com/channel/UCfv8cds8AfIM3UZtAWOz6Gg" target="_blank">
+                <ListItemIcon className={classes.iconSocialMedia}>
+                  <YoutubeIcon className={classes.iconSize} />
+                </ListItemIcon>
+                <Hidden xsDown>
+                <ListItemText
+                  className={classes.iconSocialMedia}
+                  primary="Youtube"
+                />
+                </Hidden>
+              </ListItem>
+              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://www.linkedin.com/company/codeforcauseorg/" target="_blank">
                 <ListItemIcon className={classes.iconSocialMedia}>
                   <LinkedInIcon className={classes.iconSize} />
                 </ListItemIcon>
@@ -184,7 +191,7 @@ function Footer() {
                 />
                 </Hidden>
               </ListItem>
-            </List>
+              </List>
           {/* </Grid> */}
         </Grid>
       </Container>
