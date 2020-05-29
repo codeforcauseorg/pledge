@@ -1,6 +1,6 @@
 # Pledge
 
-It is platform to rethink about places we put our efforts as a developer. In most cases we all be too attached with goals that do do provide eventual satisfaction. We all, together can code for better future. Let's come together and take the pledge to Code for Cause.
+It is a platform to reimagine about places we put our efforts into as developers. In most cases, we all are attached to the goals that provide eventual satisfaction. Let's all come together and take the pledge to Code for Cause leading to a better future.
 
 ## Installation & Set Up
 
