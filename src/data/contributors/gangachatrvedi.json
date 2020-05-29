@@ -1,7 +1,10 @@
 {
     "name": "Ganga Chaturvedi",
     "skills" : ["JS", "React"],
-    "github" : "gangachatrvedi",
     "cause" : "empowerment",
-    "image" : "/static/images/avatar-boy-1.jpeg"
+    "backgroundImg" : "/images/Avatar2Background.jpg",
+    "image" : "/images/Avatar2.jpg",
+    "github" : "https://github.com/gangachatrvedi",
+    "twitter" : "https://twitter.com/gangachatrvedi",
+    "linkedin" : "https://www.linkedin.com/in/gangachatrvedi/"
 }
