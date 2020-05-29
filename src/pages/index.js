@@ -98,7 +98,14 @@ const useStyles = makeStyles(theme => ({
   },
   iconSocialMedia: {
     color: "#fff",
-    marginLeft:"-20px"
+    marginLeft:"-10px",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  paddingCls :{
+    paddingLeft : '10px',
+    paddingRight : '10px'
   },
   iconSize: {
     fontSize: "32px",
@@ -122,7 +129,7 @@ function Footer() {
             md={12}
             >          
             <List style={flexContainer}>
-              <ListItem component="a" href="https://www.youtube.com/channel/UCfv8cds8AfIM3UZtAWOz6Gg" target="_blank">
+              <ListItem className={classes.paddingCls} component="a" href="https://www.youtube.com/channel/UCfv8cds8AfIM3UZtAWOz6Gg" target="_blank">
                 <ListItemIcon className={classes.iconSocialMedia}>
                   <YoutubeIcon className={classes.iconSize} />
                 </ListItemIcon>
@@ -133,7 +140,7 @@ function Footer() {
                 />
                 </Hidden>
               </ListItem>
-              <ListItem component="a" href="https://www.facebook.com/codeforcauseorg" target="_blank">
+              <ListItem className={classes.paddingCls} component="a" href="https://www.facebook.com/codeforcauseorg" target="_blank">
                 <ListItemIcon className={classes.iconSocialMedia}>
                   <FacebookIcon className={classes.iconSize} />
                 </ListItemIcon>
@@ -144,7 +151,7 @@ function Footer() {
                 />
                 </Hidden>
               </ListItem>
-              <ListItem component="a" href="https://www.instagram.com/codeforcause/" target="_blank">
+              <ListItem className={classes.paddingCls} component="a" href="https://www.instagram.com/codeforcause/" target="_blank">
                 <ListItemIcon className={classes.iconSocialMedia}>
                   <InstagramIcon className={classes.iconSize} />
                 </ListItemIcon>
@@ -155,7 +162,7 @@ function Footer() {
                 />
                 </Hidden>
               </ListItem>
-              <ListItem component="a" href="https://twitter.com/codeforcauseIn" target="_blank">
+              <ListItem className={classes.paddingCls} component="a" href="https://twitter.com/codeforcauseIn" target="_blank">
                 <ListItemIcon className={classes.iconSocialMedia}>
                   <TwitterIcon className={classes.iconSize} />
                 </ListItemIcon>
@@ -166,7 +173,7 @@ function Footer() {
                 />
                 </Hidden>
               </ListItem>
-              <ListItem component="a" href="https://www.linkedin.com/company/codeforcauseorg/" target="_blank">
+              <ListItem className={classes.paddingCls} component="a" href="https://www.linkedin.com/company/codeforcauseorg/" target="_blank">
                 <ListItemIcon className={classes.iconSocialMedia}>
                   <LinkedInIcon className={classes.iconSize} />
                 </ListItemIcon>
