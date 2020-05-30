@@ -31,6 +31,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YoutubeIcon from '@material-ui/icons/YouTube';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { Helmet } from "react-helmet"
 
 
 const useStyles = makeStyles(theme => ({
@@ -114,6 +115,11 @@ const useStyles = makeStyles(theme => ({
   },
   iconSize: {
     fontSize: "32px",
+  },
+  logo : {
+    borderRadius:'50%',
+    marginRight: '14px'
+
   }
 }))
 function Footer() {
@@ -198,6 +204,17 @@ function Footer() {
     </div>
   )
 }
+function Logo() {
+  const classes = useStyles()
+  return (
+    <img className={classes.logo}
+      alt="Logo"
+      width="50px"
+      height="50px"
+      src="logo.jpg"
+    />
+  );
+}
 
 export default function Home({ data }) {
   const classes = useStyles()
@@ -206,10 +223,15 @@ export default function Home({ data }) {
 
   return (
     <React.Fragment>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Pledge</title>
+          <link rel="canonical" href="https://pledge.codeforcause.org/" />
+        </Helmet>
       <CssBaseline />
       <AppBar position="relative" >
         <Toolbar>
-          {/* <CameraIcon className={classes.icon} /> */}
+        <Logo/>
           <Typography variant="h6" color="inherit" noWrap>
             Pledge
           </Typography>
@@ -263,7 +285,7 @@ export default function Home({ data }) {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={edge.node.backgroundImg}
+                    image={`/images/cover/${edge.node.image}bg.jpg`}
                     title="Image title"
                     height="240"
                   />
@@ -271,7 +293,7 @@ export default function Home({ data }) {
                     <Avatar
                       alt="Contributor"
                       className={classes.avatar}
-                      src={edge.node.image}
+                      src={`/images/avatar/${edge.node.image}.jpg`}
                       component={Link}
                     />
                   </Box>
@@ -364,7 +386,6 @@ export const query = graphql`
           name
           cause
           skills
-          backgroundImg
           image
           github
           twitter
