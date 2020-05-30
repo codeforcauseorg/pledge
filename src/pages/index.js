@@ -31,7 +31,8 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YoutubeIcon from '@material-ui/icons/YouTube';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
+import favicon from '../../static/favicon.ico'
 
 
 const useStyles = makeStyles(theme => ({
@@ -227,6 +228,8 @@ export default function Home({ data }) {
           <meta charSet="utf-8" />
           <title>Pledge</title>
           <link rel="canonical" href="https://pledge.codeforcause.org/" />
+          <link rel="icon" href={favicon} />
+
         </Helmet>
       <CssBaseline />
       <AppBar position="relative" >
@@ -286,7 +289,7 @@ export default function Home({ data }) {
                   <CardMedia
                     className={classes.cardMedia}
                     image={`/images/cover/${edge.node.image}bg.jpg`}
-                    title="Image title"
+                    title="Cover pic"
                     height="240"
                   />
                   <Box mt={-16} display="flex" justifyContent="center">
