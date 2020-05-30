@@ -59,7 +59,7 @@ const useStyles = makeStyles(theme => ({
   cardMedia: {
     width: "100%",
     height: "auto",
-    paddingTop: "56.25%", // 16:9
+    // paddingTop: "56.25%", // 16:9
   },
   cardContent: {
     flexGrow: 1,
@@ -321,7 +321,7 @@ export default function Home({ data }) {
               // Getting relevant optimised Cover image
               const coverFileName = `${edge.node.image}bg.jpg`
               const cover = coverImages.edges.find(
-                edge => edge.node.fixed.originalName === coverFileName
+                edge => edge.node.fluid.originalName === coverFileName
               )
 
               return (
@@ -330,9 +330,8 @@ export default function Home({ data }) {
                     <CardMedia
                       className={classes.cardMedia}
                       title="Cover pic"
-                      height="240"
                       component={Img}
-                      fixed={cover.node.fixed}
+                      fluid={cover.node.fluid}
                     />
                     <Box mt={-16} display="flex" justifyContent="center">
                       <Avatar
@@ -453,8 +452,8 @@ export const query = graphql`
     coverImages: allImageSharp {
       edges {
         node {
-          fixed (quality: 100) {
-            ...GatsbyImageSharpFixed
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
             originalName
           }
         }
