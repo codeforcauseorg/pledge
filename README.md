@@ -53,6 +53,8 @@ It is a platform to reimagine about places we put our efforts into as developers
 ```
 3. Commit and generate your awesome pull request with us at **codeforcauseorg/pledge**
 
+Take a look [here](./hints/create_pledge.md) for detailed version.
+
 ## Building and Running for Production
 
 1. Generate a full static production build
