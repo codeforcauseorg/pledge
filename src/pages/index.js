@@ -16,7 +16,7 @@ import {
   Divider,
   Avatar,
   Box,
-  Hidden
+  Hidden,
 } from "@material-ui/core"
 import Link from "@material-ui/core/Link"
 import { graphql } from "gatsby"
@@ -25,71 +25,71 @@ import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
 import ListItemText from "@material-ui/core/ListItemText"
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import YoutubeIcon from '@material-ui/icons/YouTube';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { Helmet } from "react-helmet";
-import favicon from '../../static/favicon.ico'
-
+import FacebookIcon from "@material-ui/icons/Facebook"
+import TwitterIcon from "@material-ui/icons/Twitter"
+import InstagramIcon from "@material-ui/icons/Instagram"
+import LinkedInIcon from "@material-ui/icons/LinkedIn"
+import YoutubeIcon from "@material-ui/icons/YouTube"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
+import { Helmet } from "react-helmet"
+import favicon from "../../static/favicon.ico"
+import Img from "gatsby-image"
 
 const useStyles = makeStyles(theme => ({
   icon: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6)
+    padding: theme.spacing(8, 0, 6),
   },
   heroButtons: {
     marginTop: theme.spacing(4),
   },
   cardGrid: {
     paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8)
+    paddingBottom: theme.spacing(8),
   },
   card: {
     height: "100%",
     display: "flex",
     flexDirection: "column",
-    borderRadius: "10px"
+    borderRadius: "10px",
   },
   cardMedia: {
     width: "100%",
     height: "auto",
-    paddingTop: "56.25%" // 16:9
+    paddingTop: "56.25%", // 16:9
   },
   cardContent: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6)
+    padding: theme.spacing(6),
   },
   chipActions: {
-    display: "block"
+    display: "block",
   },
   chip: {
-    margin: "8px 0 3px 8px"
+    margin: "8px 0 3px 8px",
   },
   iconCls: {
-    marginLeft: "10px"
+    marginLeft: "10px",
   },
   extraMargin: {
     marginTop: "15px",
-    marginBottom: "0"
+    marginBottom: "0",
   },
   avatar: {
     height: 155,
-    width: 155
+    width: 155,
   },
   btn: {
-    textTransform: "none"
+    textTransform: "none",
   },
-  copyRight : {
-    backgroundColor: theme.palette.secondary.main
+  copyRight: {
+    backgroundColor: theme.palette.secondary.main,
   },
   root: {
     backgroundColor: theme.palette.primary.main,
@@ -102,103 +102,129 @@ const useStyles = makeStyles(theme => ({
   },
   iconSocialMedia: {
     color: "#fff",
-    marginLeft:"-10px",
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
+    marginLeft: "-10px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
-  paddingCls :{
-    paddingLeft : '10px',
-    paddingRight : '10px'
+  paddingCls: {
+    paddingLeft: "10px",
+    paddingRight: "10px",
   },
-  paddingClsxs:{
-    padding : 0
+  paddingClsxs: {
+    padding: 0,
   },
   iconSize: {
     fontSize: "32px",
   },
-  logo : {
-    borderRadius:'50%',
-    marginRight: '14px'
-
-  }
+  logo: {
+    borderRadius: "50%",
+    marginRight: "14px",
+  },
 }))
 function Footer() {
   const classes = useStyles()
-  const matches = useMediaQuery('(min-width:600px)');
+  const matches = useMediaQuery("(min-width:600px)")
 
   const flexContainer = {
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
     padding: 0,
-  };
+  }
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
-        <Grid container component="dl"
-            alignItems="center"
-            justify="center"
-            item
-            xs={12}
-            md={12}
-            >          
-            <List style={flexContainer}>
-              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://www.facebook.com/codeforcauseorg" target="_blank">
-                <ListItemIcon className={classes.iconSocialMedia}>
-                  <FacebookIcon className={classes.iconSize} />
-                </ListItemIcon>
-                <Hidden xsDown>
+        <Grid
+          container
+          component="dl"
+          alignItems="center"
+          justify="center"
+          item
+          xs={12}
+          md={12}
+        >
+          <List style={flexContainer}>
+            <ListItem
+              className={matches ? classes.paddingCls : classes.paddingClsxs}
+              component="a"
+              href="https://www.facebook.com/codeforcauseorg"
+              target="_blank"
+            >
+              <ListItemIcon className={classes.iconSocialMedia}>
+                <FacebookIcon className={classes.iconSize} />
+              </ListItemIcon>
+              <Hidden xsDown>
                 <ListItemText
                   className={classes.iconSocialMedia}
                   primary="Facebook"
                 />
-                </Hidden>
-              </ListItem>
-              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://twitter.com/codeforcauseIn" target="_blank">
-                <ListItemIcon className={classes.iconSocialMedia}>
-                  <TwitterIcon className={classes.iconSize} />
-                </ListItemIcon>
-                <Hidden xsDown>
+              </Hidden>
+            </ListItem>
+            <ListItem
+              className={matches ? classes.paddingCls : classes.paddingClsxs}
+              component="a"
+              href="https://twitter.com/codeforcauseIn"
+              target="_blank"
+            >
+              <ListItemIcon className={classes.iconSocialMedia}>
+                <TwitterIcon className={classes.iconSize} />
+              </ListItemIcon>
+              <Hidden xsDown>
                 <ListItemText
                   className={classes.iconSocialMedia}
                   primary="Twitter"
                 />
-                </Hidden>
-              </ListItem>
-              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://www.instagram.com/codeforcause/" target="_blank">
-                <ListItemIcon className={classes.iconSocialMedia}>
-                  <InstagramIcon className={classes.iconSize} />
-                </ListItemIcon>
-                <Hidden xsDown>
+              </Hidden>
+            </ListItem>
+            <ListItem
+              className={matches ? classes.paddingCls : classes.paddingClsxs}
+              component="a"
+              href="https://www.instagram.com/codeforcause/"
+              target="_blank"
+            >
+              <ListItemIcon className={classes.iconSocialMedia}>
+                <InstagramIcon className={classes.iconSize} />
+              </ListItemIcon>
+              <Hidden xsDown>
                 <ListItemText
                   className={classes.iconSocialMedia}
                   primary="Instagram"
                 />
-                </Hidden>
-              </ListItem>
-              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://www.youtube.com/channel/UCfv8cds8AfIM3UZtAWOz6Gg" target="_blank">
-                <ListItemIcon className={classes.iconSocialMedia}>
-                  <YoutubeIcon className={classes.iconSize} />
-                </ListItemIcon>
-                <Hidden xsDown>
+              </Hidden>
+            </ListItem>
+            <ListItem
+              className={matches ? classes.paddingCls : classes.paddingClsxs}
+              component="a"
+              href="https://www.youtube.com/channel/UCfv8cds8AfIM3UZtAWOz6Gg"
+              target="_blank"
+            >
+              <ListItemIcon className={classes.iconSocialMedia}>
+                <YoutubeIcon className={classes.iconSize} />
+              </ListItemIcon>
+              <Hidden xsDown>
                 <ListItemText
                   className={classes.iconSocialMedia}
                   primary="Youtube"
                 />
-                </Hidden>
-              </ListItem>
-              <ListItem className={matches ? classes.paddingCls : classes.paddingClsxs} component="a" href="https://www.linkedin.com/company/codeforcauseorg/" target="_blank">
-                <ListItemIcon className={classes.iconSocialMedia}>
-                  <LinkedInIcon className={classes.iconSize} />
-                </ListItemIcon>
-                <Hidden xsDown>
+              </Hidden>
+            </ListItem>
+            <ListItem
+              className={matches ? classes.paddingCls : classes.paddingClsxs}
+              component="a"
+              href="https://www.linkedin.com/company/codeforcauseorg/"
+              target="_blank"
+            >
+              <ListItemIcon className={classes.iconSocialMedia}>
+                <LinkedInIcon className={classes.iconSize} />
+              </ListItemIcon>
+              <Hidden xsDown>
                 <ListItemText
                   className={classes.iconSocialMedia}
                   primary="LinkedIn"
                 />
-                </Hidden>
-              </ListItem>
-              </List>
+              </Hidden>
+            </ListItem>
+          </List>
           {/* </Grid> */}
         </Grid>
       </Container>
@@ -208,33 +234,35 @@ function Footer() {
 function Logo() {
   const classes = useStyles()
   return (
-    <img className={classes.logo}
+    <img
+      className={classes.logo}
       alt="Logo"
       width="50px"
       height="50px"
       src="logo.jpg"
     />
-  );
+  )
 }
 
 export default function Home({ data }) {
   const classes = useStyles()
-  
+
   const edges = data.allContributorsJson.edges
+  const avatarImages = data.avatarImages
+  const coverImages = data.coverImages
 
   return (
     <React.Fragment>
       <Helmet>
-          <meta charSet="utf-8" />
-          <title>Pledge</title>
-          <link rel="canonical" href="https://pledge.codeforcause.org/" />
-          <link rel="icon" href={favicon} />
-
-        </Helmet>
+        <meta charSet="utf-8" />
+        <title>Pledge</title>
+        <link rel="canonical" href="https://pledge.codeforcause.org/" />
+        <link rel="icon" href={favicon} />
+      </Helmet>
       <CssBaseline />
-      <AppBar position="relative" >
+      <AppBar position="relative">
         <Toolbar>
-        <Logo/>
+          <Logo />
           <Typography variant="h6" color="inherit" noWrap>
             Pledge
           </Typography>
@@ -283,101 +311,115 @@ export default function Home({ data }) {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {edges.map((edge, index) => (
-              <Grid key={index} item xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={`/images/cover/${edge.node.image}bg.jpg`}
-                    title="Cover pic"
-                    height="240"
-                  />
-                  <Box mt={-16} display="flex" justifyContent="center">
-                    <Avatar
-                      alt="Contributor"
-                      className={classes.avatar}
-                      src={`/images/avatar/${edge.node.image}.jpg`}
-                      component={Link}
-                    />
-                  </Box>
-                  {/* <Avatar alt="Remy Sharp" src={edge.node.image} /> */}
+            {edges.map((edge, index) => {
+              // Getting relevant optimised Avatar image
+              const avatarFileName = `${edge.node.image}.jpg`
+              const avatar = avatarImages.edges.find(
+                edge => edge.node.fixed.originalName === avatarFileName
+              )
 
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h6" component="h2">
-                      {`I am ${edge.node.name}`}
-                    </Typography>
-                    <Typography>{`I code for ${edge.node.cause}`}</Typography>
-                    <Typography className={classes.extraMargin}>
-                      {`You can reach me at :`}
-                    </Typography>
-                    <Typography className={classes.extraMargin}>
-                      {edge.node.github ? (
-                        <Link
-                          className={classes.iconCls}
-                          href={edge.node.github}
-                          component="a"
-                          target="_blank"
-                        >
-                          <GitHubIcon></GitHubIcon>
-                        </Link>
-                      ) : null}
-                      {edge.node.github ? (
-                        <Link
-                          className={classes.iconCls}
-                          href={edge.node.twitter}
-                          component="a"
-                          target="_blank"
-                        >
-                          <TwitterIcon></TwitterIcon>
-                        </Link>
-                      ) : null}
-                      {edge.node.github ? (
-                        <Link
-                          className={classes.iconCls}
-                          href={edge.node.linkedin}
-                          component="a"
-                          target="_blank"
-                        >
-                          <LinkedInIcon></LinkedInIcon>
-                        </Link>
-                      ) : null}
-                    </Typography>
-                  </CardContent>
-                  <Divider />
-                  <CardActions className={classes.chipActions}>
-                    {edge.node.skills.slice(0, 3).map((skill, i) => (
-                      <Chip
-                        key={i}
-                        className={classes.chip}
-                        label={skill}
-                        variant="outlined"
-                        color="primary"
-                        avatar={<Avatar>{skill[0].toUpperCase()}</Avatar>}
-                      />
-                    ))}
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
+              // Getting relevant optimised Cover image
+              const coverFileName = `${edge.node.image}bg.jpg`
+              const cover = coverImages.edges.find(
+                edge => edge.node.fixed.originalName === coverFileName
+              )
+
+              return (
+                <Grid key={index} item xs={12} sm={6} md={4}>
+                  <Card className={classes.card}>
+                    <CardMedia
+                      className={classes.cardMedia}
+                      title="Cover pic"
+                      height="240"
+                      component={Img}
+                      fixed={cover.node.fixed}
+                    />
+                    <Box mt={-16} display="flex" justifyContent="center">
+                      <Avatar
+                        alt="Contributor"
+                        className={classes.avatar}
+                        component={Link}
+                      >
+                        <Img fixed={avatar.node.fixed}></Img>
+                      </Avatar>
+                    </Box>
+                    {/* <Avatar alt="Remy Sharp" src={edge.node.image} /> */}
+
+                    <CardContent className={classes.cardContent}>
+                      <Typography gutterBottom variant="h6" component="h2">
+                        {`I am ${edge.node.name}`}
+                      </Typography>
+                      <Typography>{`I code for ${edge.node.cause}`}</Typography>
+                      <Typography className={classes.extraMargin}>
+                        {`You can reach me at :`}
+                      </Typography>
+                      <Typography className={classes.extraMargin}>
+                        {edge.node.github ? (
+                          <Link
+                            className={classes.iconCls}
+                            href={edge.node.github}
+                            component="a"
+                            target="_blank"
+                          >
+                            <GitHubIcon></GitHubIcon>
+                          </Link>
+                        ) : null}
+                        {edge.node.github ? (
+                          <Link
+                            className={classes.iconCls}
+                            href={edge.node.twitter}
+                            component="a"
+                            target="_blank"
+                          >
+                            <TwitterIcon></TwitterIcon>
+                          </Link>
+                        ) : null}
+                        {edge.node.github ? (
+                          <Link
+                            className={classes.iconCls}
+                            href={edge.node.linkedin}
+                            component="a"
+                            target="_blank"
+                          >
+                            <LinkedInIcon></LinkedInIcon>
+                          </Link>
+                        ) : null}
+                      </Typography>
+                    </CardContent>
+                    <Divider />
+                    <CardActions className={classes.chipActions}>
+                      {edge.node.skills.slice(0, 3).map((skill, i) => (
+                        <Chip
+                          key={i}
+                          className={classes.chip}
+                          label={skill}
+                          variant="outlined"
+                          color="primary"
+                          avatar={<Avatar>{skill[0].toUpperCase()}</Avatar>}
+                        />
+                      ))}
+                    </CardActions>
+                  </Card>
+                </Grid>
+              )
+            })}
           </Grid>
         </Container>
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-        Thank you for supporting us by the causes you have been coding for!
+          Thank you for supporting us by the causes you have been coding for!
         </Typography>
         <Typography
           variant="subtitle1"
           align="center"
           color="textSecondary"
           component="p"
-        >
-        </Typography>        
+        ></Typography>
       </footer>
       {/* End footer */}
-      <Footer/>
-     
+      <Footer />
     </React.Fragment>
   )
 }
@@ -393,6 +435,28 @@ export const query = graphql`
           github
           twitter
           linkedin
+        }
+      }
+    }
+
+    avatarImages: allImageSharp {
+      edges {
+        node {
+          fixed(width: 155, height: 155, quality: 100) {
+            ...GatsbyImageSharpFixed
+            originalName
+          }
+        }
+      }
+    }
+
+    coverImages: allImageSharp {
+      edges {
+        node {
+          fixed (quality: 100) {
+            ...GatsbyImageSharpFixed
+            originalName
+          }
         }
       }
     }
