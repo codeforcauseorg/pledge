@@ -4,33 +4,32 @@ It is a platform to reimagine about places we put our efforts into as developers
 
 ## Installation & Set Up
 
-1. Install the Gatsby CLI
-
-   ```sh
-   npm install -g gatsby-cli
-   ```
-
-2. In the top-right corner of the page, click Fork. Create a local clone of your fork:
+1. In the top-right corner of the page, click Fork. Create a local clone of your fork:
 
    ```sh
    git clone https://github.com/YOUR-USERNAME/pledge
     ```
 
-
-3. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
    ```sh
    cd pledge
    nvm install
    ```
 
-3. Install dependencies
+3. Install the Gatsby CLI
+
+   ```sh
+   npm install -g gatsby-cli
+   ```
+
+4. Install dependencies
 
    ```sh
    npm install
    ```
 
-4. Start the development server
+5. Start the development server
 
    ```sh
    npm run develop
