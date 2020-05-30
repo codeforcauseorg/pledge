@@ -27,4 +27,3 @@
 
 7. Commit and generate your awesome pull request with us at **codeforcauseorg/pledge**
 
-Take a look [here](./hints/create_pledge.md) for detailed version.
