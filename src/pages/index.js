@@ -287,8 +287,7 @@ export default function Home({ data }) {
               color="textSecondary"
               paragraph
             >
-              No one alone can change the world, So lets come together and Code
-              for Cause. One pull request at a time.
+              Every contribution counts! So lets come together to Code for a Cause &amp; grow together as a community. One pull request at a time.
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -408,7 +407,7 @@ export default function Home({ data }) {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Thank you for supporting us by the causes you have been coding for!
+        Thank you for supporting the community!
         </Typography>
         <Typography
           variant="subtitle1"
