@@ -1,9 +1,9 @@
 {
-    "name": "Ekta Mishra",
-    "skills" : ["Spring Boot", "Java"],
-    "cause" : "empowerment",
-    "image" : "Avatar2",
-    "github" : "https://github.com/",
-    "twitter" : "https://twitter.com/",
-    "linkedin" : "https://www.linkedin.com/in/"
+  "name": "Ekta Mishra",
+  "skills": ["Spring Boot", "Java"],
+  "cause": "empowerment",
+  "image": "Avatar2",
+  "github": "https://github.com/",
+  "twitter": "https://twitter.com/",
+  "linkedin": "https://www.linkedin.com/in/"
 }

@@ -1,9 +1,9 @@
 {
-    "name": "Ganga Chaturvedi",
-    "skills" : ["JS", "React"],
-    "cause" : "empowerment",
-    "image" : "Avatar6",
-    "github" : "https://github.com/gangachatrvedi",
-    "twitter" : "https://twitter.com/gangachatrvedi",
-    "linkedin" : "https://www.linkedin.com/in/gangachatrvedi/"
+  "name": "Ganga Chaturvedi",
+  "skills": ["JS", "React"],
+  "cause": "empowerment",
+  "image": "Avatar6",
+  "github": "https://github.com/gangachatrvedi",
+  "twitter": "https://twitter.com/gangachatrvedi",
+  "linkedin": "https://www.linkedin.com/in/gangachatrvedi/"
 }

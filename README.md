@@ -8,7 +8,7 @@ It is a platform to reimagine about places we put our efforts into as developers
 
    ```sh
    git clone https://github.com/YOUR-USERNAME/pledge
-    ```
+   ```
 
 2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
@@ -34,11 +34,12 @@ It is a platform to reimagine about places we put our efforts into as developers
    ```sh
    npm run develop
    ```
-   
+
 ## Steps to take the pledge
 
 1. Create new file under **pledge/src/data/contributors/** with name [your-username].json
 2. Add this json content and edit it with your details
+
 ```
 {
     "name": "Ganga Chaturvedi",
@@ -50,6 +51,7 @@ It is a platform to reimagine about places we put our efforts into as developers
     "linkedin" : "https://www.linkedin.com/in/gangachatrvedi"
 }
 ```
+
 3. Commit and generate your awesome pull request with us at **codeforcauseorg/pledge**
 
 Take a look [here](./hints/create_pledge.md) for detailed version.
@@ -69,10 +71,11 @@ Take a look [here](./hints/create_pledge.md) for detailed version.
    ```
 
 ## Contributing
+
 Pull requests are welcome.
 
 See the [guidelines](contributing.md) for contributing to this project.
 
-
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
