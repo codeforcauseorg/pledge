@@ -298,7 +298,7 @@ export default function Home({ data }) {
                     className={classes.btn}
                     variant="contained"
                     component="a"
-                    href="https://github.com/codeforcauseorg/pledge"
+                    href="https://github.com/codeforcauseorg/pledge#steps-to-take-the-pledge"
                     color="primary"
                     target="_blank"
                   >
