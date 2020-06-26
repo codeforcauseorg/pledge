@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect, Fragment } from "react"
 import CardContent from "@material-ui/core/CardContent"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import Toolbar from "@material-ui/core/Toolbar"
@@ -34,6 +34,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery"
 import { Helmet } from "react-helmet"
 import favicon from "../../static/favicon.ico"
 import Img from "gatsby-image"
+import loadergif from '../../static/loading-opaque.gif'
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -244,13 +245,33 @@ function Logo() {
   )
 }
 
+function Loader(){
+
+  return(
+    <Fragment>
+      <img src={loadergif} alt ="..." style={{margin: "auto", display: "block", width: "60%"}}/>
+    </Fragment>
+    )
+}
+
 export default function Home({ data }) {
   const classes = useStyles()
 
   const edges = data.allContributorsJson.edges
   const avatarImages = data.avatarImages
   const coverImages = data.coverImages
+  const [loaded,setLoaded]=useState(false);
 
+  useEffect(()=>{
+    setTimeout(()=>{
+    setLoaded(true);
+    },2500)
+  },[])
+
+  if(!loaded){
+    return <Loader/>
+  }
+  
   return (
     <React.Fragment>
       <Helmet>
