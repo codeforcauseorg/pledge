@@ -34,7 +34,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery"
 import { Helmet } from "react-helmet"
 import favicon from "../../static/favicon.ico"
 import Img from "gatsby-image"
-import loadergif from '../../static/loading-opaque.gif'
+import loadergif from "../../static/loading-opaque.gif"
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -245,13 +245,16 @@ function Logo() {
   )
 }
 
-function Loader(){
-
-  return(
+function Loader() {
+  return (
     <Fragment>
-      <img src={loadergif} alt ="..." style={{margin: "auto", display: "block", width: "60%"}}/>
+      <img
+        src={loadergif}
+        alt="..."
+        style={{ margin: "auto", display: "block", width: "60%" }}
+      />
     </Fragment>
-    )
+  )
 }
 
 export default function Home({ data }) {
@@ -260,18 +263,18 @@ export default function Home({ data }) {
   const edges = data.allContributorsJson.edges
   const avatarImages = data.avatarImages
   const coverImages = data.coverImages
-  const [loaded,setLoaded]=useState(false);
+  const [loaded, setLoaded] = useState(false)
 
-  useEffect(()=>{
-    setTimeout(()=>{
-    setLoaded(true);
-    },2500)
-  },[])
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true)
+    }, 2500)
+  }, [])
 
-  if(!loaded){
-    return <Loader/>
+  if (!loaded) {
+    return <Loader />
   }
-  
+
   return (
     <React.Fragment>
       <Helmet>
@@ -385,7 +388,7 @@ export default function Home({ data }) {
                             <GitHubIcon></GitHubIcon>
                           </Link>
                         ) : null}
-                        {edge.node.github ? (
+                        {edge.node.twitter ? (
                           <Link
                             className={classes.iconCls}
                             href={edge.node.twitter}
@@ -395,7 +398,7 @@ export default function Home({ data }) {
                             <TwitterIcon></TwitterIcon>
                           </Link>
                         ) : null}
-                        {edge.node.github ? (
+                        {edge.node.linkedin ? (
                           <Link
                             className={classes.iconCls}
                             href={edge.node.linkedin}
