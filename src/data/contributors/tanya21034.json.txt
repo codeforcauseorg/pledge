@@ -1,0 +1,7 @@
+{
+    "name": "Tanya Chaturvedi",
+    "skills" : ["Python", "C"],
+    "cause" : "Achieve dreams and help others to be better",
+    "image" : "Avatar6",
+    "github" : "https://github.com/tanya21034",
+}
