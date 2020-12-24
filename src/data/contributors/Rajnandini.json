@@ -1,5 +1,9 @@
-Name : Rajnandini S Tambavekar
-Skill : Python
-Image : Avatar6
-Github : https://github.com/rajnandini-tambavekar
-twitter : -
+{
+  "name": "Rajnandini S T",
+  "skills": ["Python"],
+  "cause": "knowledge and contributing in opensource",
+  "image": "Avatar5",
+  "github": "https://github.com/rajnandini-tambavekar",
+  "twitter": "--",
+  "linkedin": "--"
+}
