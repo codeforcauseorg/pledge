@@ -1,0 +1,8 @@
+{
+  "name": "Ajinkya Kumbhar",
+  "skills": ["Python","c++","java","html"],
+  "cause": "Getting started with open source",
+  "image": "Avatar3",
+  "github": "https://github.com/ajinkyak423",
+  "linkedin" : "https://www.linkedin.com/in/ajinkya-kumbhar-0a439b202/"
+}
