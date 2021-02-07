@@ -1,0 +1,8 @@
+{
+  "name": "Nihar Dubey",
+  "skills": ["C","C++","java","html","Ds"],
+  "cause": "New towards Open Source",
+  "image": "Avatar5",
+  "github": "https://github.com/nihardubey19",
+  "linkedin" : "https://www.linkedin.com/in/nihar-dubey-a624a81a0/"
+}
