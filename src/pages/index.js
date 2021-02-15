@@ -412,16 +412,26 @@ export default function Home({ data }) {
                     </CardContent>
                     <Divider />
                     <CardActions className={classes.chipActions}>
-                      {edge.node.skills.slice(0, 3).map((skill, i) => (
+                      {edge.node.skills ?
+                        edge.node.skills.slice(0, 3).map((skill, i) => (
+                          <Chip
+                            key={i}
+                            className={classes.chip}
+                            label={skill}
+                            variant="outlined"
+                            color="primary"
+                            avatar={<Avatar>{skill[0].toUpperCase()}</Avatar>}
+                          />
+                        )) :
                         <Chip
-                          key={i}
+                          key={0}
                           className={classes.chip}
-                          label={skill}
+                          label={"No skills"}
                           variant="outlined"
                           color="primary"
-                          avatar={<Avatar>{skill[0].toUpperCase()}</Avatar>}
+                          avatar={<Avatar>{'N'}</Avatar>}
                         />
-                      ))}
+                      }
                     </CardActions>
                   </Card>
                 </Grid>
