@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import React from "react"
-import { useStyles } from "./styles.js"
+import { useStyles } from "../../static/styles.js"
 
 function Logo() {
   const classes = useStyles()

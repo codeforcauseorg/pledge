@@ -12,7 +12,7 @@ import Pagination from "./pagination"
 import Toolbar from "@material-ui/core/Toolbar"
 import favicon from "../../static/favicon.ico"
 import { graphql } from "gatsby"
-import { useStyles } from "./styles"
+import { useStyles } from "../../static/styles"
 
 export default function Home({ data }) {
   const classes = useStyles()

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 import { Button } from "@material-ui/core"
-import { useStyles } from "./styles.js"
+import { useStyles } from "../../static/styles.js"
 
 function Pagination({ userPerPage, totalUsers, paginate }) {
   const classes = useStyles()

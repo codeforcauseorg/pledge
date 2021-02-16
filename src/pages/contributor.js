@@ -19,7 +19,7 @@ import Link from "@material-ui/core/Link"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import React from "react"
 import TwitterIcon from "@material-ui/icons/Twitter"
-import { useStyles } from "./styles.js"
+import { useStyles } from "../../static/styles.js"
 
 function Contributor({ edge, avatar, cover, index }) {
   const classes = useStyles()

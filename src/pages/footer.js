@@ -13,7 +13,7 @@ import React from "react"
 import TwitterIcon from "@material-ui/icons/Twitter"
 import YoutubeIcon from "@material-ui/icons/YouTube"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
-import { useStyles } from "./styles.js"
+import { useStyles } from "../../static/styles.js"
 
 function Footer() {
   const classes = useStyles()
