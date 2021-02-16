@@ -2,13 +2,13 @@
 import { AppBar, Button, Container, Grid, Typography } from "@material-ui/core"
 import React, { useEffect, useState } from "react"
 
-import Contributor from "./contributor"
+import Contributor from "../components/contributor"
 import CssBaseline from "@material-ui/core/CssBaseline"
-import Footer from "./footer"
+import Footer from "../components/footer"
 import { Helmet } from "react-helmet"
-import Loader from "./loader"
-import Logo from "./logo"
-import Pagination from "./pagination"
+import Loader from "../components/loader"
+import Logo from "../components/logo"
+import Pagination from "../components/pagination"
 import Toolbar from "@material-ui/core/Toolbar"
 import favicon from "../../static/favicon.ico"
 import { graphql } from "gatsby"
@@ -38,11 +38,13 @@ export default function Home({ data }) {
   //pagination funtion to update page number
   const paginate = pageNumber => {
     setCurrentPage(pageNumber)
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    })
+    if (typeof window !== `undefined`) {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      })
+    }
   }
 
   if (!loaded) {
