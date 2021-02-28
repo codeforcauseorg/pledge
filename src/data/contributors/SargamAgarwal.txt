@@ -4,5 +4,5 @@
     "cause" : "I code for the betterment of society",
     "image" : "Avatar6",
     "github" : "https://github.com/Sargam-Agarwal",
-    "linkedin" : "https://www.linkedin.com/in/sargam-agarwal-9320791a5",
+    "linkedin" : "https://www.linkedin.com/in/sargam-agarwal-9320791a5"
 }
