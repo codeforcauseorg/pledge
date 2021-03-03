@@ -2,7 +2,7 @@
 
 It is a platform to reimagine about places we put our efforts into as developers. In most cases, we all are attached to the goals that provide eventual satisfaction. Let's all come together and take the pledge to Code for Cause leading to a better future.
 
-## Installation & Set Up
+## Instalation & Set Up
 
 1. In the top-right corner of the page, click Fork. Create a local clone of your fork:
 
