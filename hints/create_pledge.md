@@ -5,13 +5,13 @@
 
 ```
 {
-    "name": "Ganga Chaturvedi",
-    "skills" : ["JS", "React"],
+    "name": "Tanmay Raikwar",
+    "skills" : ["Java","data structure and algorithim"],
     "cause" : "empowerment",
-    "image" : "Avatar2",
-    "github" : "https://github.com/gangachatrvedi",
-    "twitter" : "https://twitter.com/gangachatrvedi",
-    "linkedin" : "https://www.linkedin.com/in/gangachatrvedi"
+    "image" : "Avatar4",
+    "github" : "https://github.com/TanmayRaiwkar",
+    "twitter" : "https://twitter.com/nil",
+    "linkedin" : "https://www.linkedin.com/in/TanmayRaikwar"
 }
 ```
 
