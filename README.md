@@ -58,13 +58,13 @@ Take a look [here](./hints/create_pledge.md) for detailed version.
 
 ## Building and Running for Production
 
-1. Generate a full static production build
+1. Generate a full static production build.
 
    ```sh
    npm run build
    ```
 
-1. Preview the site as it will appear once deployed
+1. Preview the site as it will appear once deployed.
 
    ```sh
    npm run serve
