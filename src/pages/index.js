@@ -398,6 +398,16 @@ export default function Home({ data }) {
                             <TwitterIcon></TwitterIcon>
                           </Link>
                         ) : null}
+                        {edge.node.instagram ? (
+                          <Link
+                            className={classes.iconCls}
+                            href={edge.node.instagram}
+                            component="a"
+                            target="_blank"
+                          >
+                            <InstagramIcon></InstagramIcon>
+                          </Link>
+                        ) : null}
                         {edge.node.linkedin ? (
                           <Link
                             className={classes.iconCls}
@@ -467,6 +477,7 @@ export const query = graphql`
           skills
           image
           github
+          instagram
           twitter
           linkedin
         }
