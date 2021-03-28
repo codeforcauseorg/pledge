@@ -48,6 +48,7 @@ It is a platform to reimagine about places we put our efforts into as developers
     "image" : "Avatar2",
     "github" : "https://github.com/gangachatrvedi",
     "twitter" : "https://twitter.com/gangachatrvedi",
+    "instagram" : "https://instagram.com/akshayd02",
     "linkedin" : "https://www.linkedin.com/in/gangachatrvedi"
 }
 ```
