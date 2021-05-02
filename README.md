@@ -7,7 +7,7 @@ It is a platform to reimagine about places we put our efforts into as developers
 1. In the top-right corner of the page, click Fork. Create a local clone of your fork:
 
    ```sh
-   git clone https://github.com/YOUR-USERNAME/pledge
+   git clone https://github.com/YOUR-USERNAME/pledge.git
    ```
 
 2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
