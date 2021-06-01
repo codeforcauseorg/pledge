@@ -1,0 +1,15 @@
+{
+<<<<<<< HEAD
+    "name": "Siddhesh Singh",
+    "skills": ["C++", "Java", "Python","Html","CSS"],
+    "cause": "To add value to the community",
+    "image": "Avatar5"
+} 
+=======
+  "name": "Siddhesh Singh",
+  "skills": ["c++", "html", "css","java"],
+  "cause": "tech revolution",
+  "image": "Avatar5"
+  
+}
+>>>>>>> 4c863ceb7a2de1cdce38644861f348933a3511f1
