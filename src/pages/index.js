@@ -35,6 +35,7 @@ import { Helmet } from "react-helmet"
 import favicon from "../../static/favicon.ico"
 import Img from "gatsby-image"
 import loadergif from "../../static/loading-opaque.gif"
+import Pagination from "../Pagination"
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -132,6 +133,7 @@ function Footer() {
     flexDirection: "row",
     padding: 0,
   }
+
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
@@ -265,6 +267,15 @@ export default function Home({ data }) {
   const coverImages = data.coverImages
   const [loaded, setLoaded] = useState(false)
 
+  const [currentPage, setCurrentPage] = useState(1)
+  const cardsPerPage = 39
+
+  const indexOfLastCard = currentPage * cardsPerPage
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage
+  const currentCards = edges.slice(indexOfFirstCard, indexOfLastCard)
+
+  const paginate = pageNumber => setCurrentPage(pageNumber)
+
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true)
@@ -336,7 +347,7 @@ export default function Home({ data }) {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {edges.map((edge, index) => {
+            {currentCards.map((edge, index) => {
               // Getting relevant optimised Avatar image
               const avatarFileName = `${edge.node.image}.jpg`
               const avatar = avatarImages.edges.find(
@@ -412,32 +423,41 @@ export default function Home({ data }) {
                     </CardContent>
                     <Divider />
                     <CardActions className={classes.chipActions}>
-                      {edge.node.skills ?
-                        edge.node.skills.slice(0, 3).map((skill, i) => (
-                          <Chip
-                            key={i}
-                            className={classes.chip}
-                            label={skill}
-                            variant="outlined"
-                            color="primary"
-                            avatar={<Avatar>{skill[0].toUpperCase()}</Avatar>}
-                          />
-                        )) :
+                      {edge.node.skills ? (
+                        edge.node.skills
+                          .slice(0, 3)
+                          .map((skill, i) => (
+                            <Chip
+                              key={i}
+                              className={classes.chip}
+                              label={skill}
+                              variant="outlined"
+                              color="primary"
+                              avatar={<Avatar>{skill[0].toUpperCase()}</Avatar>}
+                            />
+                          ))
+                      ) : (
                         <Chip
                           key={0}
                           className={classes.chip}
                           label={"No skills"}
                           variant="outlined"
                           color="primary"
-                          avatar={<Avatar>{'N'}</Avatar>}
+                          avatar={<Avatar>{"N"}</Avatar>}
                         />
-                      }
+                      )}
                     </CardActions>
                   </Card>
                 </Grid>
               )
             })}
           </Grid>
+          <Pagination
+            cardsPerPage={cardsPerPage}
+            totalCards={edges.length}
+            paginate={paginate}
+            currentPage={currentPage}
+          />
         </Container>
       </main>
       {/* Footer */}
