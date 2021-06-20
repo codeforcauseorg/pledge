@@ -262,7 +262,10 @@ function Loader() {
 export default function Home({ data }) {
   const classes = useStyles()
 
-  const edges = data.allContributorsJson.edges
+  const edges = data.allContributorsJson.edges.sort((a, b) =>
+    a.node.name.localeCompare(b.node.name, undefined, { sensitivity: "base" })
+  )
+
   const avatarImages = data.avatarImages
   const coverImages = data.coverImages
   const [loaded, setLoaded] = useState(false)
@@ -346,6 +349,9 @@ export default function Home({ data }) {
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
+          <h4>
+            Cards are arranged in the alphabetical order of contributors name
+          </h4>
           <Grid container spacing={4}>
             {currentCards.map((edge, index) => {
               // Getting relevant optimised Avatar image
