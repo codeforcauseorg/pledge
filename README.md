@@ -72,7 +72,7 @@ Take a look [here](./hints/create_pledge.md) for detailed version.
 
 ## Contributing
 
-Pull requests are welcome.
+Pull requests are always welcome.
 
 See the [guidelines](contributing.md) for contributing to this project.
 
