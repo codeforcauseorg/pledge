@@ -38,7 +38,7 @@ It is a platform to reimagine about places we put our efforts into as developers
 ## Steps to take the pledge
 
 1. Create new file under **pledge/src/data/contributors/** with name [your-username].json
-2. Add this json content and edit it with your details
+2. Add this json content and edit it with your information
 
 ```
 {
