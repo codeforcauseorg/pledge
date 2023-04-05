@@ -1,0 +1,9 @@
+{
+    "name": "Ambareen Azam",
+    "skills" : ["JS", "React", "Django", "Cpp", "HTML", "CSS", "Docker"],
+    "cause" : "Encourage female participation in open source community",
+    "image" : "Avatar2",
+    "github" : "https://github.com/Ambareen09",
+    "twitter" : "https://twitter.com/AzamAmbareen",
+    "linkedin" : "https://www.linkedin.com/in/ambareen-azam"
+}
