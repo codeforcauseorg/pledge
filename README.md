@@ -4,8 +4,7 @@ It is a platform to reimagine about places we put our efforts into as developers
 
 ## Installation & Set Up
 
-1. In the top-right corner of the page, click Fork. Create a local clone of your fork:
-
+1. In the top-right corner of the page, click Fork. Create a local clone of your fork as per follows 
    ```sh
    git clone https://github.com/YOUR-USERNAME/pledge.git
    ```
@@ -79,3 +78,5 @@ See the [guidelines](contributing.md) for contributing to this project.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
