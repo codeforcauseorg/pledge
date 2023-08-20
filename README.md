@@ -4,7 +4,6 @@ It is a platform to reimagine about places we put our efforts into as developers
 
 ## Installation & Set Up
 
-1. In the top-right corner of the page, click Fork. Create a local clone of your fork:
 
    ```sh
    git clone https://github.com/YOUR-USERNAME/pledge.git
@@ -23,7 +22,7 @@ It is a platform to reimagine about places we put our efforts into as developers
    npm install -g gatsby-cli
    ```
 
-4. Install dependencies
+4. Install all dependencies
 
    ```sh
    npm install
